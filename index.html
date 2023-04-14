@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>PROg209HW2</title>
+  </head>
+
+  <body>
+    <form>
+      <fieldset id="pizzaSize">
+        <legend>Pizza</legend>
+        <p>Size</p>
+
+        <input type="radio" id="small" name="size" value="Small" onclick="handleClick(this);">     
+        <label for="small">Small</label><br>
+        <input type="radio" id="medium" name="size" value="Medium" onclick="handleClick(this);">
+        <label for="medium">Medium</label><br>
+        <input type="radio" id="large" name="size" value="Large" onclick="handleClick(this);">
+        <label for="large">Large</label><br><br>
+
+        
+        <label for="toppings">Number of toppings</label>
+        <select name="toppings" id="toppings">
+          <option value="noToppings">no toppings</option>
+          <option value="oneTopping">one topping</option>
+          <option value="twoToppings">two toppings</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit" onclick="formSubmitEvent()">
+
+      </fieldset>
+    </form>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
